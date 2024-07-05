@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLOWERS NIYO OH!</title>
+    <style>
+        body {
+            background: #3C5377;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Zilla Slab', sans-serif;
+        }
+
+        .maincontainer {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card-container {
+            position: relative;
+            width: 250px;
+            height: 320px;
+        }
+
+        .thecard {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+        }
+
+        .thecard:hover {
+            transform: rotateY(180deg);
+        }
+
+        .thefront, .theback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            backface-visibility: hidden;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .thefront {
+            background: #ffc728;
+            color: #000;
+        }
+
+        .theback {
+            background: #fafafa;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+
+        .thefront h1, .theback h1 {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .thefront p, .theback p {
+            font-weight: normal;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .thefront img, .theback img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="card-container">
+            <div class="thecard">
+                <div class="thefront">
+                    <h1>FOR PRETTY MELROSE</h1>
+                    <img src="images/melrose.jpg" alt="Pretty Melrose">
+                    <p>You make every moment special. Turn over to see how amazing you are!</p>
+                </div>
+                <div class="theback">
+                    <p>The pink rose stands for the joy and gratitude I feel for having you in my life. Each flower is a reminder of the beautiful moments we've shared and the many more to come.</p>
+                    <img src="images/pink-rose.webp" alt="Pink Rose">
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="thecard">
+                <div class="thefront">
+                    <h1>FOR HOTTIE SHEENA</h1>
+                    <img src="images/sheena.jpg" alt="Hottie Sheena">
+                    <p>Every moment with you is a treasure. Turn over to see why you’re so wonderful!</p>
+                </div>
+                <div class="theback">
+                    <p>The red rose represents the deep love and respect I have for you, my dearest friend. Each flower is a reminder of the beautiful moments we've shared and the many more to come.</p>
+                    <img src="images/red-rose.jpg" alt="Red Rose">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
